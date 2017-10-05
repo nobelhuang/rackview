@@ -6,6 +6,7 @@
 		"strict": true,
 		"noImplicitReturns": true,
 		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
 		"rootDir": ".",
 		"sourceMap": true,
 		"allowSyntheticDefaultImports": true,
@@ -15,13 +16,17 @@
 		],
 		"baseUrl": "./",
 		"paths": {
-			"@/*": [
+			"@src/*": [
 				"src/*"
+			],
+			"@example-app/*": [
+				"example/app/*"
 			]
 		}
 	},
 	"include": [
-		"./src/**/*"
+		"./src/**/*",
+		"./example/**/*"
 	],
 	"exclude": [
 		"node_modules"

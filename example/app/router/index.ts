@@ -3,7 +3,7 @@ import Router from "vue-router";
 
 Vue.use(Router);
 
-import Hello from "@/components/hello.vue";
+import Hello from "@example-app/hello/hello.vue";
 
 export default new Router({
   routes: [
