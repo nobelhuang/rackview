@@ -21,6 +21,9 @@
 			],
 			"@example-app/*": [
 				"example/app/*"
+			],
+			"@example-assets/*": [
+				"example/assets/*"
 			]
 		}
 	},

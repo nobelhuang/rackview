@@ -1,18 +1,16 @@
 <template>
-  <div id="app">
-    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-    <router-view></router-view>
-  </div>
+	<rv-app></rv-app>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 
 export default {
-  name: "app",
+	name: "app",
 } as Vue.ComponentOptions<Vue>;
 </script>
 
 <style>
+
 </style>
 
