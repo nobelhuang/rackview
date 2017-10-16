@@ -23,7 +23,7 @@
 				"example/app/*"
 			],
 			"@example-assets/*": [
-				"example/assets/*"
+				"example/app/assets/*"
 			]
 		}
 	},

@@ -6,12 +6,12 @@ Vue.use(Router);
 import Hello from "@example-app/hello/hello.vue";
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello,
-    },
-  ],
+	routes: [
+		{
+			path: '/',
+			name: 'Hello',
+			component: Hello,
+		},
+	],
 });
 
