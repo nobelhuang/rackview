@@ -7,6 +7,26 @@
 			<rv-app-toolbar-block>link2</rv-app-toolbar-block>
 			<rv-app-toolbar-block>link3</rv-app-toolbar-block>
 		</rv-app-toolbar>
+		<rv-navigation slot="nav">
+			<rv-nav-group>
+				<rv-nav-item slot="title">group 1</rv-nav-item>
+				<rv-nav-item>item 1</rv-nav-item>
+				<rv-nav-item>
+					item 2
+					<rv-navigation slot="subnav">
+						<rv-nav-group>
+							<rv-nav-item slot="title">sub group 1</rv-nav-item>
+							<rv-nav-item>sub item 1</rv-nav-item>
+							<rv-nav-item>sub item 2</rv-nav-item>
+						</rv-nav-group>
+					</rv-navigation>
+				</rv-nav-item>
+			</rv-nav-group>
+			<rv-nav-group>
+				<rv-nav-item slot="title">group 2</rv-nav-item>
+				<rv-nav-item>group 2 item 1</rv-nav-item>
+			</rv-nav-group>
+		</rv-navigation>
 	</rv-app>
 </template>
 
