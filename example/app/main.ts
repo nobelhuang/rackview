@@ -4,9 +4,9 @@ import "core-js/es7";
 import Vue from "vue";
 
 /** have to import the base UI library manually */
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-default/index.css';
-Vue.use(ElementUI);
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
+Vue.use(iView);
 
 import RackView from "@src/index";
 Vue.use(RackView);

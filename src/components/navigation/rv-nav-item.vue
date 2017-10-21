@@ -1,7 +1,7 @@
 <template>
 	<div :class="['rv-nav-item', 'rv-layout', 'rv-layout--center-items']">
 		<slot></slot>
-		<div :class="['rv-nav-item__subnav']">
+		<div :class="['rv-nav-item__subnav']" v-if="showSubnav">
 			<slot name="subnav"></slot>
 		</div>
 	</div>
@@ -19,6 +19,7 @@
 		top: 0;
 		box-sizing: border-box;
 		height: 100%;
+		display: none;
 	}
 }
 </style>
@@ -29,5 +30,8 @@ import { Component, Prop } from "vue-property-decorator";
 
 @Component
 export default class RvNavItem extends Vue {
+	get showSubnav () {
+		return this.$slots.subnav && this.$slots.subnav.length > 0;
+	}
 }
 </script>

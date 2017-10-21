@@ -1,0 +1,45 @@
+.rv-typo-display1 {
+	font-size: $typo-display1-font-size;
+	font-weight: $typo-display1-font-weight;
+}
+.rv-typo-display2 {
+	font-size: $typo-display2-font-size;
+	font-weight: $typo-display2-font-weight;
+}
+.rv-typo-display3 {
+	font-size: $typo-display3-font-size;
+	font-weight: $typo-display2-font-weight;
+}
+.rv-typo-headline {
+	font-size: $typo-headline-font-size;
+	font-weight: $typo-headline-font-weight;
+}
+.rv-typo-title {
+	font-size: $typo-title-font-size;
+	font-weight: $typo-title-font-weight;
+}
+.rv-typo-sub-title {
+	font-size: $typo-sub-title-font-size;
+	font-weight: $typo-sub-title-font-weight;
+}
+.rv-typo-small-title {
+	font-size: $typo-small-title-font-size;
+	font-weight: $typo-small-title-font-weight;
+}
+.rv-typo-body {
+	font-size: $typo-body-font-size;
+	font-weight: $typo-body-font-weight;
+}
+.rv-typo-tip {
+	@extend .rv-typo-body;
+	color: $color-primary-text-tip;
+}
+.rv-typo-disabled {
+	@extend .rv-typo-body;
+	color: 	$color-primary-text-disabled;
+}
+
+html, body {
+	font-family: $typo-font-family;
+	line-height: $typo-line-height;
+}

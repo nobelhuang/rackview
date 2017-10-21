@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue, { ComponentOptions } from "vue";
 
 interface Hello extends Vue {
   msg: string;
@@ -34,7 +34,7 @@ export default {
       msg: "Welcome to Your Vue.js App",
     };
   },
-} as Vue.ComponentOptions<Hello>;
+} as ComponentOptions<Hello>;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

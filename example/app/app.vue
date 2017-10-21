@@ -13,6 +13,7 @@
 				<rv-nav-item>item 1</rv-nav-item>
 				<rv-nav-item>
 					item 2
+					<!-- pop out navigation of next level -->
 					<rv-navigation slot="subnav">
 						<rv-nav-group>
 							<rv-nav-item slot="title">sub group 1</rv-nav-item>
@@ -21,6 +22,17 @@
 						</rv-nav-group>
 					</rv-navigation>
 				</rv-nav-item>
+				<!-- nested groups of next level -->
+				<rv-nav-group>
+					<rv-nav-item slot="title">nested group 1</rv-nav-item>
+					<rv-nav-item>nested item 1</rv-nav-item>
+					<rv-nav-item>nested item 2</rv-nav-item>
+				</rv-nav-group>
+				<rv-nav-group>
+					<rv-nav-item slot="title">nested group 2</rv-nav-item>
+					<rv-nav-item>nested item 3</rv-nav-item>
+					<rv-nav-item>nested item 4</rv-nav-item>
+				</rv-nav-group>
 			</rv-nav-group>
 			<rv-nav-group>
 				<rv-nav-item slot="title">group 2</rv-nav-item>

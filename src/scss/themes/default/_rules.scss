@@ -1,0 +1,20 @@
+/* all default theme rules are written according to components
+ * and any other themes can use this as a start point to create the new theme.
+ */
+ @import 'typography-rules';
+
+.rv-app {
+	@extend .rv-typo-body;
+	background-color: $color-background;
+	color: $color-text;
+}
+
+.rv-app-toolbar {
+	@extend .rv-typo-sub-title;
+	background-color: $color-primary;
+	color: $color-primary-text;
+}
+
+.rv-navigation {
+	@extend .rv-typo-sub-title;
+}
